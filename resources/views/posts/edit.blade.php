@@ -1,8 +1,7 @@
 <x-layout>
     <x-card class="p-10 max-w-lg mx-auto mt-24">
         <header class="text-center">
-            <h2 class="text-2xl font-bold uppercase mb-1">Nové téma</h2>
-            <p class="mb-4">Zeptejte se na to co Vás zajímá</p>
+            <h2 class="text-2xl font-bold uppercase mb-1">Upravte odpověď</h2>
         </header>
 
         <form method="POST" action="/posts/{{$post->id}}" enctype="multipart/form-data">
@@ -22,10 +21,10 @@
 
             <div class="mb-6">
                 <button class="bg-laravel text-white rounded py-2 px-4 hover:bg-black">
-                    Odeslat odpověď
+                    Upravit
                 </button>
 
-                <a href="/" class="text-black ml-4"> Back </a>
+                <a href="/" class="text-black ml-4"> Zpět </a>
             </div>
         </form>
     </x-card>

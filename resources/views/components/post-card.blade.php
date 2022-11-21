@@ -13,7 +13,7 @@
                 </div>
 
                 <div class="grid grid-cols-2">
-                    @if($topic->user_id == auth()->id())
+                    @if($post->user_id == auth()->id())
                     <div>
                         <a href="/posts/{{$post->id}}/edit">
                             <i class="fa-solid fa-wrench"></i> Upravit
