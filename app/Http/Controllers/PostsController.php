@@ -48,7 +48,7 @@ class PostsController extends Controller
                             VALUES (?,? , ?, ?, ?)', [$post['user_id'], $post['topic_id'], $post['content'], $post['updated_at'], $post['created_at']]);
 
 
-        return redirect('/topic/'.$post['topic_id'])->with('message', 'Listing created successfully!');
+        return redirect('/topic/'.$post['topic_id'])->with('message', 'Odeslali jste odpověď!');
     }
 
     /**

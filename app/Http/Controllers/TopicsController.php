@@ -67,7 +67,7 @@ class TopicsController extends Controller
                             VALUES (?,? , ?, ?, ?)', [$post['user_id'], $post['topic_id'], $post['content'], $post['updated_at'], $post['created_at']]);
 
 
-        return redirect('/')->with('message', 'Listing created successfully!');
+        return redirect('/')->with('message', 'Téma bylo úspěšně vytvořeno!');
     }
 
     /**
